@@ -2,3 +2,40 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+:root {
+    --back-color: hsl(226, 43%, 10%);
+    --purp: #5747EA;
+}
+
+body {
+    background-color: var(--back-color);
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 300px;
+
+}
+
+#large-box {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#big_purp {
+    background-color: var(--purp);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+
+.face-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
