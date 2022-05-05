@@ -6,6 +6,7 @@
 :root {
     --back-color: hsl(226, 43%, 10%);
     --purp: #5747EA;
+    --orange: #FF8B64;
 }
 
 body {
@@ -14,15 +15,17 @@ body {
     justify-items: center;
     justify-content: center;
     grid-template-columns: 85%;
+    gap: 20px;
 
 }
 
 #large-box {
-
+    background-color: #1C204B;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1rem;
 }
 
 #big_purp {
@@ -34,10 +37,35 @@ body {
     align-items: center;
 }
 
+#small_purp {
+
+    width: 100%;
+    border-radius: 1rem;
+}
+
 
 .face-icon {
     width: 60px;
     height: 60px;
     border: 2px solid #fff;
     border-radius: 50%;
+}
+
+.small-box {
+    width: 100%;
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.description_dots {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
