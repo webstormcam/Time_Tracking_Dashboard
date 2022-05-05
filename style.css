@@ -55,6 +55,11 @@ body {
     width: 100%;
 }
 
+.logo-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .lower-section {
     display: flex;
     flex-direction: column;
