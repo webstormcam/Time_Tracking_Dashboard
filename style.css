@@ -7,6 +7,7 @@
     --back-color: hsl(226, 43%, 10%);
     --purp: #5747EA;
     --orange: #FF8B64;
+    --white: #fff
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 85%;
+    grid-template-columns: 327px;
     gap: 20px;
 
 }
@@ -35,19 +36,30 @@ body {
     padding: 2rem;
     display: flex;
     align-items: center;
+
 }
 
 #small_purp {
-
+    display: flex;
     width: 100%;
     border-radius: 1rem;
+    justify-content: space-around;
+
+}
+
+#small_purp p {
+    padding: 1rem;
+    font-weight: 400;
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
 }
 
 
+
 .face-icon {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #fff;
+    width: 64px;
+    height: 64px;
+    border: 3px solid var(--white);
     border-radius: 50%;
 }
 
@@ -73,4 +85,24 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.small_words {
+    font-size: 0.8rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.report {
+    margin-bottom: 0.3rem;
+}
+
+.user_info {
+    color: var(--white);
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+#user {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
 }
