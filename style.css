@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 #big_purp {
@@ -182,7 +183,7 @@ body {
 #grid_of_cubes {
     display: grid;
     grid-template-columns: 327px;
-    width: 100%;
+
     gap: 20px;
     justify-content: center;
 }
@@ -193,16 +194,21 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
 
+    }
+
+    #large-box {
+        width: 255px;
+        margin-right: 1rem;
     }
 
     #grid_of_cubes {
 
         grid-template-rows: 170px 170px;
         grid-template-columns: 255px 255px 255px;
-        width: 100%;
+
         justify-content: flex-start;
     }
 
