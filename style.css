@@ -73,6 +73,7 @@ body {
 .logo-top {
     display: flex;
     justify-content: flex-end;
+    overflow-x: hidden;
 }
 
 .lower-section {
@@ -95,6 +96,14 @@ body {
     justify-content: space-between;
     padding: 1.5rem 2rem 0.5rem 2rem;
     align-items: center;
+}
+
+.stat-pics {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    right: 1rem;
+    top: -1rem;
 }
 
 .second-mini-section {
