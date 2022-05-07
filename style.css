@@ -9,6 +9,11 @@
     --orange: #FF8B64;
     --white: #fff;
     --offsetpurp: #BBC0FF;
+    --turk: #55C2E6;
+    --red: #FF5E7D;
+    --green: #4BCF82;
+    --twitch_purp: #7335D2;
+    --yellow: #F1C75B;
 }
 
 body {
@@ -89,6 +94,26 @@ body {
 
 .orange {
     background-color: var(--orange);
+}
+
+.turk {
+    background-color: var(--turk);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.twitch_purp {
+    background-color: var(--twitch_purp);
+}
+
+.yellow {
+    background-color: var(--yellow);
 }
 
 .description_dots {
