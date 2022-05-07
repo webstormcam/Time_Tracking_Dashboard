@@ -7,7 +7,8 @@
     --back-color: hsl(226, 43%, 10%);
     --purp: #5747EA;
     --orange: #FF8B64;
-    --white: #fff
+    --white: #fff;
+    --offsetpurp: #BBC0FF;
 }
 
 body {
@@ -48,7 +49,7 @@ body {
 }
 
 #small_purp p {
-    padding: 1rem;
+    padding: 1.5rem;
     font-weight: 400;
     color: var(--white);
     font-family: 'Rubik', sans-serif;
@@ -65,6 +66,8 @@ body {
 
 .small-box {
     width: 100%;
+    border-radius: 1rem;
+    position: relative;
 }
 
 .logo-top {
@@ -75,6 +78,12 @@ body {
 .lower-section {
     display: flex;
     flex-direction: column;
+    background-color: #1C204B;
+    border-radius: 0.7rem;
+    width: 100%;
+    position: relative;
+    bottom: 2.2rem;
+    height: 80%;
 }
 
 .orange {
@@ -83,7 +92,15 @@ body {
 
 .description_dots {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    align-items: center;
+}
+
+.second-mini-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0rem 2rem;
     align-items: center;
 }
 
@@ -105,4 +122,24 @@ body {
 #user {
     font-family: 'Rubik', sans-serif;
     font-size: 1.5rem;
+}
+
+.medium {
+    font-size: 1rem;
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.large {
+    font-size: 2rem;
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.small_hours {
+    font-size: 0.8rem;
+    color: var(--offsetpurp);
+    font-family: 'Rubik', sans-serif;
 }
