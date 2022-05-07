@@ -18,17 +18,18 @@
 
 body {
     background-color: var(--back-color);
-    display: grid;
+    display: flex;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: 327px;
-    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+
 
 }
 
 #large-box {
     background-color: #1C204B;
-    width: 100%;
+    width: 327px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,4 +177,34 @@ body {
     font-size: 0.8rem;
     color: var(--offsetpurp);
     font-family: 'Rubik', sans-serif;
+}
+
+#grid_of_cubes {
+    display: grid;
+    grid-template-columns: 327px;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    #grid_of_cubes {
+
+        grid-template-rows: 170px 170px;
+        grid-template-columns: 255px 255px 255px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
 }
