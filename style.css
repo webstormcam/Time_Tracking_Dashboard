@@ -25,6 +25,7 @@ body {
     flex-direction: column;
 
 
+
 }
 
 #large-box {
@@ -195,8 +196,18 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+        align-content: center;
+        height: 100vh;
 
 
+
+
+
+    }
+
+    #all_items {
+        display: flex;
+        align-self: center;
     }
 
     #large-box {
