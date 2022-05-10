@@ -245,7 +245,7 @@ body {
 
     #grid_of_cubes {
 
-        grid-template-rows: 250px 250px;
+        grid-template-rows: 242px 242px;
         grid-template-columns: 255px 255px 255px;
 
         justify-content: flex-start;
