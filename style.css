@@ -189,7 +189,7 @@ body {
     justify-content: center;
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1300px) {
     body {
 
         display: flex;
@@ -277,6 +277,21 @@ body {
 
     .medium {
         font-size: 1.1rem;
+    }
+
+    .second-mini-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .large {
+        font-size: 3.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .small_hours {
+        margin-top: 1rem;
     }
 
 
