@@ -120,15 +120,15 @@ let work_small = document.getElementById('small-work-hours')
         }
 
         this.classList.add('click');
+        console.log(this.innerHTML)
 
         for(let i=0;i<large.length;i++){
           large[i].innerHTML = json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['current']+'hrs'
         }
         
-        // work_large.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['current'] +'hrs'
-        // work_small.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['previous'] +'hrs'
+    
 
-        console.log(this.innerHTML)
+        
 
       });
     }
