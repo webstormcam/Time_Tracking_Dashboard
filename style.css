@@ -63,6 +63,14 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+#small_purp p :hover {
+    color: red;
+}
+
+.click {
+    color: red !important;
+}
+
 
 
 .face-icon {
@@ -335,9 +343,9 @@ body {
         justify-content: flex-start;
     }
 
-    .click {
-        color: red !important;
-    }
+
+
+
 
 
 

@@ -104,10 +104,12 @@ let json_doc = [
   ]
 
 
-  console.log(json_doc[0]['timeframes']['weekly'])
-
+  console.log(json_doc[0]['timeframes']['daily'])
+let picked;
 
 let choices = document.querySelectorAll('.choice');
+let work_large = document.getElementById('work-hours')
+let work_small = document.getElementById('small-work-hours')
 
 
   for(i = 0; i<choices.length;i++){
@@ -117,7 +119,10 @@ let choices = document.querySelectorAll('.choice');
         }
 
         this.classList.add('click');
-        console.log(this)
+        work_large.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['current'] +'hrs'
+        work_small.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['previous'] +'hrs'
+
+        console.log(this.innerHTML)
 
       });
     }
