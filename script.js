@@ -104,4 +104,4 @@ let json_doc = [
   ]
 
 
-  console.log(json_doc[0])
+  console.log(json_doc[0]['timeframes']['weekly'])
