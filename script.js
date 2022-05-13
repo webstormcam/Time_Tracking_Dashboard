@@ -108,7 +108,8 @@ let json_doc = [
 let picked;
 
 let choices = document.querySelectorAll('.choice');
-let work_large = document.getElementById('work-hours')
+// let work_large = document.getElementById('work-hours')
+let large = document.querySelectorAll('.large')
 let work_small = document.getElementById('small-work-hours')
 
 
@@ -119,8 +120,13 @@ let work_small = document.getElementById('small-work-hours')
         }
 
         this.classList.add('click');
-        work_large.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['current'] +'hrs'
-        work_small.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['previous'] +'hrs'
+
+        for(let i=0;i<large.length;i++){
+          large[i].innerHTML = json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['current']+'hrs'
+        }
+        
+        // work_large.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['current'] +'hrs'
+        // work_small.innerHTML = json_doc[0]['timeframes'][this.innerHTML.toLowerCase()]['previous'] +'hrs'
 
         console.log(this.innerHTML)
 
