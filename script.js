@@ -105,3 +105,19 @@ let json_doc = [
 
 
   console.log(json_doc[0]['timeframes']['weekly'])
+
+
+let choices = document.querySelectorAll('.choice');
+
+
+  for(i = 0; i<choices.length;i++){
+    choices[i].addEventListener("click",function(e){
+        for(i=0; i<choices.length;i++){
+            choices[i].classList.remove('click');
+        }
+
+        this.classList.add('click');
+        console.log(this)
+
+      });
+    }
