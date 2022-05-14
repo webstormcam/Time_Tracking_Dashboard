@@ -63,13 +63,22 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-#small_purp p :hover {
+.choice {
+    display: inline-block;
+}
+
+.choice:hover {
     color: red;
+    cursor: pointer;
+
 }
 
 .click {
     color: red !important;
+
 }
+
+
 
 
 
