@@ -110,7 +110,7 @@ let picked;
 let choices = document.querySelectorAll('.choice');
 // let work_large = document.getElementById('work-hours')
 let large = document.querySelectorAll('.large')
-let work_small = document.getElementById('small-work-hours')
+let work_small = document.querySelectorAll('.small_hours')
 
 
   for(i = 0; i<choices.length;i++){
@@ -124,6 +124,10 @@ let work_small = document.getElementById('small-work-hours')
 
         for(let i=0;i<large.length;i++){
           large[i].innerHTML = json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['current']+'hrs'
+        }
+
+        for(let i=0; i<work_small.length;i++){
+          work_small[i].innerHTML = json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['previous']
         }
         
     
