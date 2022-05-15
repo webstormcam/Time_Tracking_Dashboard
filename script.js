@@ -127,7 +127,16 @@ let work_small = document.querySelectorAll('.small_hours')
         }
 
         for(let i=0; i<work_small.length;i++){
-          work_small[i].innerHTML = json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['previous']
+         let short_Time ='';
+          if(this.innerHTML.toLowerCase()==='daily'){
+            short_Time='Yesterday'
+          } else if(this.innerHTML.toLowerCase()==='weekly'){
+            short_Time='Last Week'
+          } else{
+            short_Time ='Last Month'
+          }
+         
+          work_small[i].innerHTML = `${short_Time} - ${json_doc[i]['timeframes'][this.innerHTML.toLowerCase()]['previous']}hrs`
         }
         
     
