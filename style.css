@@ -65,11 +65,14 @@ body {
 
 .choice {
     display: inline-block;
+    cursor: pointer;
+
 }
 
 .choice:hover {
     color: red;
-    cursor: pointer;
+
+
 
 }
 
@@ -206,6 +209,11 @@ body {
     justify-content: center;
 }
 
+.grey {
+    background-color: #33397A;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width:768px) {
     /* #grid_of_cubes {
@@ -288,6 +296,7 @@ body {
 
     .small_hours {
         margin-top: 1rem;
+        font-size: 15px;
     }
 
 }

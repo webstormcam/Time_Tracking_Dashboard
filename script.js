@@ -109,8 +109,10 @@ let picked;
 
 let choices = document.querySelectorAll('.choice');
 // let work_large = document.getElementById('work-hours')
-let large = document.querySelectorAll('.large')
-let work_small = document.querySelectorAll('.small_hours')
+let large = document.querySelectorAll('.large');
+let work_small = document.querySelectorAll('.small_hours');
+
+let lower_Section = document.querySelectorAll('.lower-section');
 
 
   for(i = 0; i<choices.length;i++){
@@ -144,6 +146,22 @@ let work_small = document.querySelectorAll('.small_hours')
         
 
       });
+  }
+  
+  for(i=0;i<lower_Section.length;i++){
+    lower_Section[i].addEventListener('mouseover',function(){
+      for(i=0; i<lower_Section.length;i++){
+        lower_Section[i].classList.remove('grey');
     }
+    this.classList.add('grey');
+    })
+  }
+
+  for(i=0;i<lower_Section.length;i++){
+    lower_Section[i].addEventListener('mouseout',function(){
+      this.classList.remove('grey')
+    })
+  }
+  
 
     
