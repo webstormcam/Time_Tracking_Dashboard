@@ -330,7 +330,7 @@ body {
 
     #large-box {
         width: 255px;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         margin-bottom: 0rem;
 
     }
@@ -356,9 +356,10 @@ body {
 
     #grid_of_cubes {
 
-        grid-template-rows: 242px 242px;
+        grid-template-rows: 236px 236px;
         grid-template-columns: 255px 255px 255px;
         width: auto;
+        gap: 30px;
         justify-content: flex-start;
     }
 
